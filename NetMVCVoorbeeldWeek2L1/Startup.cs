@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -38,13 +38,16 @@ namespace NetMVCVoorbeeldWeek2L1
             }
 
             app.UseStaticFiles();
+            app.UseMvcWithDefaultRoute(); /* is koter, basically functie hier beneden*/
 
+            /* OUTDATED
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            */
         }
     }
 }
