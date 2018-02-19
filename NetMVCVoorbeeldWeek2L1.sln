@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMVCVoorbeeldWeek2L1", "NetMVCVoorbeeldWeek2L1\NetMVCVoorbeeldWeek2L1.csproj", "{C11F3F27-5344-4C55-A057-88CFDA3A3598}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHowest", "MyHowest\MyHowest.csproj", "{535CE6FE-C36A-4B1D-9F68-9C4B7CFD0218}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C11F3F27-5344-4C55-A057-88CFDA3A3598}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C11F3F27-5344-4C55-A057-88CFDA3A3598}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C11F3F27-5344-4C55-A057-88CFDA3A3598}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535CE6FE-C36A-4B1D-9F68-9C4B7CFD0218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535CE6FE-C36A-4B1D-9F68-9C4B7CFD0218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535CE6FE-C36A-4B1D-9F68-9C4B7CFD0218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535CE6FE-C36A-4B1D-9F68-9C4B7CFD0218}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

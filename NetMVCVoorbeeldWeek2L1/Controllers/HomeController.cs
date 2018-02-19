@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyHowest;
 
 namespace NetMVCVoorbeeldWeek2L1.Controllers
 {
@@ -34,6 +35,18 @@ namespace NetMVCVoorbeeldWeek2L1.Controllers
                                    $"de {Array.IndexOf(groenten, zoekGroente) + 1}e uit de lijst";
             }
           
+            return View();
+        }
+
+        public ViewResult Studenten()
+        {
+            List<Student> studenten = new List<Student>
+            {
+                new MyHowest.Student {Id = 23,Naam = "tom", AfstudeerGraad = Graad.Voldoening},
+                new MyHowest.Student {Id = 23,Naam = "jeff", AfstudeerGraad = Graad.Voldoening},
+            };
+            ViewBag.Studenten = studenten;
+            
             return View();
         }
 
