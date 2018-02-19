@@ -8,10 +8,35 @@ namespace NetMVCVoorbeeldWeek2L1.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index(string name)
+
+        private string[] groenten = {"Rode kool","Spruitjes","Wortel","Spinazie" };
+        public ViewResult Index(string name)
         {
-            return $"Hallo {name}";
+            ViewBag.Groet = DateTime.Now.Hour < 12 ? "Goeiemorgen" : "Goeienamiddag";
+
+            return View();
         }
+
+        public ViewResult Groenten(string zoekGroente)
+        {
+
+            ViewBag.Groenten = groenten;
+            if (string.IsNullOrEmpty(zoekGroente))
+            {
+
+                ViewBag.Zoekresultaat = $"niet gevonden";
+                                  
+
+            }
+            else
+            {
+                ViewBag.Zoekresultaat = $"de gezochte groente is" +
+                                   $"de {Array.IndexOf(groenten, zoekGroente) + 1}e uit de lijst";
+            }
+          
+            return View();
+        }
+
 
     }
 }
